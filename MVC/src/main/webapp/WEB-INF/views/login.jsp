@@ -35,8 +35,7 @@
                     </div>
                     <div class="mb-3">
                         <select name="status" class="form-select" aria-label="Default select example">
-                            <option selected>Status Select</option>
-                            <option value="customer">Customer</option>
+                            <option selected value="customer">Customer</option>
                             <option value="user">User</option>
                         </select>
                     </div>
