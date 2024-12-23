@@ -20,6 +20,7 @@ public class LoginController {
     }
 
     // MethodArgumentNotValidException
+    /*
     @PostMapping("login")
     public String loginPost(@Valid Customer customer, BindingResult bindingResult, Model model){
         if (bindingResult.hasErrors()) {
@@ -27,6 +28,13 @@ public class LoginController {
             model.addAttribute("error", errors);
             return "login";
         }
+        System.out.println(customer);
+        return "login";
+    }
+     */
+
+    @PostMapping("login")
+    public String loginPost(@Valid Customer customer){
         System.out.println(customer);
         return "login";
     }
